@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(-45deg, #d6fbdc, #c8dbfb, #e1cbf7, #fbb7ce);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+h1 {
+    color: #343a40;
+    font-weight: bold;
+}
+
+.card {
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: beige;
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 30px;
+    background-color: white;
+}
+
+#task-form .input-group-append .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#task-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.priority-high {
+    border-left: 5px solid red;
+}
+
+.priority-medium {
+    border-left: 5px solid orange;
+}
+
+.priority-low {
+    border-left: 5px solid green;
+}
+
+#task-list .complete-btn,
+#task-list .delete-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+#task-list .complete-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#task-list .delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#search-input {
+    margin-top: 20px;
+}
+
+.input-group-append .btn {
+    background-color: #007bff;
+    color: white;
+}
